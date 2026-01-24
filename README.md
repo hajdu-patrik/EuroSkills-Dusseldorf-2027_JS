@@ -26,7 +26,7 @@ The solution uses a decoupled architecture separating the data ingestion layer f
 
 ## 🛠️ Technical Implementation: Import Script
 
-Located in `import-map.js`, the script functions as a custom **Data Processing Pipeline** (using the ETL pattern):
+Located in `import-map.js`, the script functions as a custom **ETL Pipeline**:
 
 1.  **Extract:** Validates input paths and reads raw assets (`map.txt` for terrain topology, `map.png` for visualization).
 2.  **Transform:**
