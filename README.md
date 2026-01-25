@@ -4,7 +4,7 @@
 ![JSON Server](https://img.shields.io/badge/Backend-json--server_0.17.4-000000?style=for-the-flat&logo=json&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Prototype_Phase_2-orange?style=for-the-flat)
 
-# GreenWind Project - EuroSkills 2027 Prototype
+# GreenWind - EuroSkills 2027
 
 This repository contains the prototype solution for **GreenWind**, developed as part of the EuroSkills 2027 recruitment task. The project aims to assist wind turbine planners in optimizing energy yields through digital terrain analysis and simulation.
 
