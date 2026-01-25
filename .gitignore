@@ -1,2 +1,8 @@
-/greenwind-project/node_modules/
-/greenwind-project/front-end/
+# Node modules and lock files
+greenwind/node_modules
+greenwind/package-lock.json
+
+greenwind/frontend/node_modules
+greenwind/frontend/package-lock.json
+
+.vscode/

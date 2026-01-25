@@ -1,0 +1,16 @@
+{
+  "name": "greenwind",
+  "version": "1.0.0",
+  "description": "GreenWind",
+  "main": "import-map.js",
+  "scripts": {
+    "server": "json-server --watch database.json --port 3000",
+    "import": "node import-map.js ./assets/Mariager"
+  },
+  "dependencies": {
+    "axios": "^1.13.2",
+    "json-server": "^0.17.4",
+    "react-router-dom": "^7.13.0",
+    "uuid": "^13.0.0"
+  }
+}
