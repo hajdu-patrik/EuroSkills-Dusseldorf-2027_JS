@@ -170,3 +170,155 @@ const MapEditor = () => {
     return false;
   };
 ```
+
+---
+
+### Prompt #4
+
+Help me to implement the grid display of the map cells in MapEditor.jsx including hover effects and tooltips showing cell information.
+
+### Respone for my Prompt #4:
+```JavaScript
+<div className="absolute inset-0 z-10 grid grid-cols-20 grid-rows-20">
+    {simulationData.cells.map((simCell, index) => {
+    const cell = project.cells[index];
+    const isHovered = hoveredCell === index;
+    const isValid = canPlaceTurbine(cell, project.cells);
+                
+    let iconToShow = null;
+    if (cell.hasTurbine) iconToShow = isHovered ? removeImg : turbineImg;
+    else if (isHovered) iconToShow = isValid ? turbineImg : removeImg;
+
+    const tooltipText = simCell.hasTurbine 
+        ? `Power: ${Math.round(simCell.power)} kW\nWind: ${simCell.speed.toFixed(1)} m/s\nModifiers: ${(simCell.modifier * 100).toFixed(0)}%\n${simCell.reasons.join('\n')}`
+        : `Wind: ${simCell.speed.toFixed(1)} m/s`;
+
+        return (
+            <div 
+                key={`${cell.x}-${cell.y}`}
+                className={getCellClasses(cell, isHovered, simCell)}
+                onClick={() => handleCellClick(index)}
+                onMouseEnter={() => setHoveredCell(index)}
+                onMouseLeave={() => setHoveredCell(null)}
+                onDragStart={(e) => e.preventDefault()}
+                title={tooltipText}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleCellClick(index); }}
+                >
+            {cell.type !== 'Mountain' && (
+            <div className="absolute inset-0 flex items-center justify-center opacity-30 pointer-events-none text-[10px] text-stone-900 font-bold select-none">
+                <span className="select-none" style={{ transform: `rotate(${getArrowRotation(windDirection)}deg)` }}>➤</span>
+            </div>
+                )}
+                {iconToShow && (
+                    <img src={iconToShow} alt="status" onDragStart={(e) => e.preventDefault()}
+                        className={`w-4/5 h-4/5 object-contain drop-shadow-lg pointer-events-none transform-gpu relative z-10 select-none ${!cell.hasTurbine && isHovered && isValid ? 'opacity-50' : 'opacity-100'}`} 
+                    />
+                )}
+            </div>
+        );
+    })}
+</div>
+```
+
+---
+
+### Prompt #5
+
+Fix the static analysis tools found errors and explain why the code is more efficient this way!
+
+```SonarQube
+[{
+"resource": "/e:/Coding Projects/Competition/es2027-s09-r1-174/greenwind/frontend/src/pages/MapEditor.jsx",
+"owner": "sonarlint",
+"code": "javascript:S3776",
+"severity": 4,
+"message": "Refactor this function to reduce its Cognitive Complexity from 18 to the 15 allowed. [+14 locations]",
+"source": "sonarqube",
+"startLineNumber": 115,
+"startColumn": 53,
+"endLineNumber": 115,
+"endColumn": 55,
+"modelVersionId": 809,
+"origin": "extHost1"
+},{
+"resource": "/e:/Coding Projects/Competition/es2027-s09-r1-174/greenwind/frontend/src/pages/MapEditor.jsx",
+"owner": "sonarlint",
+"code": "javascript:S6660",
+"severity": 4,
+"message": "'If' statement should not be the only statement in 'else' block",
+"source": "sonarqube",
+"startLineNumber": 130,
+"startColumn": 9,
+"endLineNumber": 130,
+"endColumn": 11,
+"modelVersionId": 809,
+"origin": "extHost1"
+},{
+"resource": "/e:/Coding Projects/Competition/es2027-s09-r1-174/greenwind/frontend/src/pages/MapEditor.jsx",
+"owner": "sonarlint",
+"code": "javascript:S6848",
+"severity": 4,
+"message": "Avoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element.",
+"source": "sonarqube",
+"startLineNumber": 171,
+"startColumn": 13,
+"endLineNumber": 171,
+"endColumn": 123,
+"modelVersionId": 809,
+"origin": "extHost1"
+},{
+"resource": "/e:/Coding Projects/Competition/es2027-s09-r1-174/greenwind/frontend/src/pages/MapEditor.jsx",
+"owner": "sonarlint",
+"code": "javascript:S6848",
+"severity": 4,
+"message": "Avoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element.",
+"source": "sonarqube",
+"startLineNumber": 189,
+"startColumn": 19,
+"endLineNumber": 197,
+"endColumn": 20,
+"modelVersionId": 809,
+"origin": "extHost1"
+},{
+"resource": "/e:/Coding Projects/Competition/es2027-s09-r1-174/greenwind/frontend/src/pages/MapEditor.jsx",
+"owner": "sonarlint",
+"code": "javascript:S3358",
+"severity": 4,
+"message": "Extract this nested ternary operation into an independent statement.",
+"source": "sonarqube",
+"startLineNumber": 202,
+"startColumn": 123,
+"endLineNumber": 202,
+"endColumn": 159,
+"modelVersionId": 809,
+"origin": "extHost1"
+}]
+```
+
+### Respone for my Prompt #5:
+
+The fixed code is as follows:
+
+```JavaScript
+// Helper to reduce complexity of getCellClasses (S3776)
+const getTurbineColorClass = (power, min, max) => {
+    if (min === max) return "bg-emerald-500/60";
+    const ratio = (power - min) / (max - min || 1);
+    if (ratio < 0.33) return "bg-red-500/60";
+    if (ratio < 0.66) return "bg-orange-400/60";
+    return "bg-emerald-500/60";
+};
+```
+
+The code is more efficient this way because:
+1. **Reduced Cognitive Complexity (S3776)**: By breaking down complex functions into smaller helper functions, the code becomes easier to read and maintain. Each function has a single responsibility, making it simpler to understand and test.
+
+etc...
+
+---
+
+## Final Statement
+
+I used AI to assist in the development of this project, I ensured that I reviewed and understood all generated code before integrating it into my solution.
