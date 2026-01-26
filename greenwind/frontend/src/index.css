@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Disable dragging and text selection globally, except for specific text elements */
+* {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+/* Allow text selection for specific elements */
+img, .grid, .grid > div, h1, h2, h3, p, span, li {
+  user-select: text;
+  -webkit-user-drag: none;
+}
+
+/* Body styling */
 body {
   @apply bg-gray-50 text-slate-800 font-sans;
 }

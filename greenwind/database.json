@@ -135,7 +135,7 @@
           "x": 1,
           "y": 1,
           "type": "Grass",
-          "hasTurbine": true
+          "hasTurbine": false
         },
         {
           "x": 2,
@@ -500,1760 +500,1760 @@
         {
           "x": 2,
           "y": 4,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 3,
-          "y": 4,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 4,
-          "y": 4,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 5,
-          "y": 4,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 6,
-          "y": 4,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 7,
-          "y": 4,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 8,
-          "y": 4,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 9,
-          "y": 4,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 10,
-          "y": 4,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 11,
-          "y": 4,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 12,
-          "y": 4,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 13,
-          "y": 4,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 14,
-          "y": 4,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 15,
-          "y": 4,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 16,
-          "y": 4,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 17,
-          "y": 4,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 18,
-          "y": 4,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 19,
-          "y": 4,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 0,
-          "y": 5,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 1,
-          "y": 5,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 2,
-          "y": 5,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 3,
-          "y": 5,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 4,
-          "y": 5,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 5,
-          "y": 5,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 6,
-          "y": 5,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 7,
-          "y": 5,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 8,
-          "y": 5,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 9,
-          "y": 5,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 10,
-          "y": 5,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 11,
-          "y": 5,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 12,
-          "y": 5,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 13,
-          "y": 5,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 14,
-          "y": 5,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 15,
-          "y": 5,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 16,
-          "y": 5,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 17,
-          "y": 5,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 18,
-          "y": 5,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 19,
-          "y": 5,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 0,
-          "y": 6,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 1,
-          "y": 6,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 2,
-          "y": 6,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 3,
-          "y": 6,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 4,
-          "y": 6,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 5,
-          "y": 6,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 6,
-          "y": 6,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 7,
-          "y": 6,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 8,
-          "y": 6,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 9,
-          "y": 6,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 10,
-          "y": 6,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 11,
-          "y": 6,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 12,
-          "y": 6,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 13,
-          "y": 6,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 14,
-          "y": 6,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 15,
-          "y": 6,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 16,
-          "y": 6,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 17,
-          "y": 6,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 18,
-          "y": 6,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 19,
-          "y": 6,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 0,
-          "y": 7,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 1,
-          "y": 7,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 2,
-          "y": 7,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 3,
-          "y": 7,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 4,
-          "y": 7,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 5,
-          "y": 7,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 6,
-          "y": 7,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 7,
-          "y": 7,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 8,
-          "y": 7,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 9,
-          "y": 7,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 10,
-          "y": 7,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 11,
-          "y": 7,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 12,
-          "y": 7,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 13,
-          "y": 7,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 14,
-          "y": 7,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 15,
-          "y": 7,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 16,
-          "y": 7,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 17,
-          "y": 7,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 18,
-          "y": 7,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 19,
-          "y": 7,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 0,
-          "y": 8,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 1,
-          "y": 8,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 2,
-          "y": 8,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 3,
-          "y": 8,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 4,
-          "y": 8,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 5,
-          "y": 8,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 6,
-          "y": 8,
-          "type": "Grass",
-          "hasTurbine": true
-        },
-        {
-          "x": 7,
-          "y": 8,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 8,
-          "y": 8,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 9,
-          "y": 8,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 10,
-          "y": 8,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 11,
-          "y": 8,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 12,
-          "y": 8,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 13,
-          "y": 8,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 14,
-          "y": 8,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 15,
-          "y": 8,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 16,
-          "y": 8,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 17,
-          "y": 8,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 18,
-          "y": 8,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 19,
-          "y": 8,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 0,
-          "y": 9,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 1,
-          "y": 9,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 2,
-          "y": 9,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 3,
-          "y": 9,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 4,
-          "y": 9,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 5,
-          "y": 9,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 6,
-          "y": 9,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 7,
-          "y": 9,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 8,
-          "y": 9,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 9,
-          "y": 9,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 10,
-          "y": 9,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 11,
-          "y": 9,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 12,
-          "y": 9,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 13,
-          "y": 9,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 14,
-          "y": 9,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 15,
-          "y": 9,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 16,
-          "y": 9,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 17,
-          "y": 9,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 18,
-          "y": 9,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 19,
-          "y": 9,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 0,
-          "y": 10,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 1,
-          "y": 10,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 2,
-          "y": 10,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 3,
-          "y": 10,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 4,
-          "y": 10,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 5,
-          "y": 10,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 6,
-          "y": 10,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 7,
-          "y": 10,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 8,
-          "y": 10,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 9,
-          "y": 10,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 10,
-          "y": 10,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 11,
-          "y": 10,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 12,
-          "y": 10,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 13,
-          "y": 10,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 14,
-          "y": 10,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 15,
-          "y": 10,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 16,
-          "y": 10,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 17,
-          "y": 10,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 18,
-          "y": 10,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 19,
-          "y": 10,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 0,
-          "y": 11,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 1,
-          "y": 11,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 2,
-          "y": 11,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 3,
-          "y": 11,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 4,
-          "y": 11,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 5,
-          "y": 11,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 6,
-          "y": 11,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 7,
-          "y": 11,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 8,
-          "y": 11,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 9,
-          "y": 11,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 10,
-          "y": 11,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 11,
-          "y": 11,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 12,
-          "y": 11,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 13,
-          "y": 11,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 14,
-          "y": 11,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 15,
-          "y": 11,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 16,
-          "y": 11,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 17,
-          "y": 11,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 18,
-          "y": 11,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 19,
-          "y": 11,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 0,
-          "y": 12,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 1,
-          "y": 12,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 2,
-          "y": 12,
           "type": "Grass",
           "hasTurbine": true
         },
         {
           "x": 3,
-          "y": 12,
+          "y": 4,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 4,
-          "y": 12,
+          "y": 4,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 5,
-          "y": 12,
-          "type": "Grass",
+          "y": 4,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 6,
-          "y": 12,
-          "type": "Lake",
+          "y": 4,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 7,
-          "y": 12,
-          "type": "Lake",
+          "y": 4,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 8,
-          "y": 12,
-          "type": "Grass",
+          "y": 4,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 9,
-          "y": 12,
+          "y": 4,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 10,
-          "y": 12,
+          "y": 4,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 11,
-          "y": 12,
+          "y": 4,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 12,
-          "y": 12,
+          "y": 4,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 13,
-          "y": 12,
+          "y": 4,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 14,
+          "y": 4,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 15,
+          "y": 4,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 16,
+          "y": 4,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 17,
+          "y": 4,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 18,
+          "y": 4,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 19,
+          "y": 4,
+          "type": "Mountain",
+          "hasTurbine": false
+        },
+        {
+          "x": 0,
+          "y": 5,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 1,
+          "y": 5,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 2,
+          "y": 5,
+          "type": "Mountain",
+          "hasTurbine": false
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "type": "Mountain",
+          "hasTurbine": false
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "type": "Mountain",
+          "hasTurbine": false
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "type": "Mountain",
+          "hasTurbine": false
+        },
+        {
+          "x": 6,
+          "y": 5,
+          "type": "Mountain",
+          "hasTurbine": false
+        },
+        {
+          "x": 7,
+          "y": 5,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 8,
+          "y": 5,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 9,
+          "y": 5,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 10,
+          "y": 5,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 11,
+          "y": 5,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 12,
+          "y": 5,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 13,
+          "y": 5,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 14,
+          "y": 5,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 15,
+          "y": 5,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 16,
+          "y": 5,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 17,
+          "y": 5,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 18,
+          "y": 5,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 19,
+          "y": 5,
+          "type": "Mountain",
+          "hasTurbine": false
+        },
+        {
+          "x": 0,
+          "y": 6,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 1,
+          "y": 6,
+          "type": "Mountain",
+          "hasTurbine": false
+        },
+        {
+          "x": 2,
+          "y": 6,
+          "type": "Mountain",
+          "hasTurbine": false
+        },
+        {
+          "x": 3,
+          "y": 6,
+          "type": "Mountain",
+          "hasTurbine": false
+        },
+        {
+          "x": 4,
+          "y": 6,
+          "type": "Mountain",
+          "hasTurbine": false
+        },
+        {
+          "x": 5,
+          "y": 6,
+          "type": "Mountain",
+          "hasTurbine": false
+        },
+        {
+          "x": 6,
+          "y": 6,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 7,
+          "y": 6,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 8,
+          "y": 6,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 9,
+          "y": 6,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 10,
+          "y": 6,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 11,
+          "y": 6,
+          "type": "Mountain",
+          "hasTurbine": false
+        },
+        {
+          "x": 12,
+          "y": 6,
+          "type": "Mountain",
+          "hasTurbine": false
+        },
+        {
+          "x": 13,
+          "y": 6,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 14,
+          "y": 6,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 15,
+          "y": 6,
           "type": "Grass",
           "hasTurbine": true
         },
         {
-          "x": 14,
-          "y": 12,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 15,
-          "y": 12,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
           "x": 16,
-          "y": 12,
+          "y": 6,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 17,
-          "y": 12,
+          "y": 6,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 18,
-          "y": 12,
-          "type": "Mountain",
+          "y": 6,
+          "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 19,
-          "y": 12,
+          "y": 6,
           "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 0,
-          "y": 13,
+          "y": 7,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 1,
-          "y": 13,
-          "type": "Grass",
+          "y": 7,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 2,
-          "y": 13,
-          "type": "Grass",
+          "y": 7,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 3,
-          "y": 13,
-          "type": "Grass",
+          "y": 7,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 4,
-          "y": 13,
+          "y": 7,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 5,
-          "y": 13,
-          "type": "Lake",
+          "y": 7,
+          "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 6,
-          "y": 13,
-          "type": "Lake",
+          "y": 7,
+          "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 7,
-          "y": 13,
-          "type": "Lake",
+          "y": 7,
+          "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 8,
-          "y": 13,
-          "type": "Lake",
+          "y": 7,
+          "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 9,
-          "y": 13,
-          "type": "Lake",
+          "y": 7,
+          "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 10,
-          "y": 13,
-          "type": "Grass",
+          "y": 7,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 11,
-          "y": 13,
-          "type": "Grass",
+          "y": 7,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 12,
-          "y": 13,
-          "type": "Grass",
+          "y": 7,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 13,
-          "y": 13,
-          "type": "Grass",
+          "y": 7,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 14,
-          "y": 13,
-          "type": "Grass",
+          "y": 7,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 15,
-          "y": 13,
+          "y": 7,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 16,
-          "y": 13,
+          "y": 7,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 17,
-          "y": 13,
+          "y": 7,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 18,
-          "y": 13,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 19,
-          "y": 13,
-          "type": "Mountain",
-          "hasTurbine": false
-        },
-        {
-          "x": 0,
-          "y": 14,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 1,
-          "y": 14,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 2,
-          "y": 14,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 3,
-          "y": 14,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 4,
-          "y": 14,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 5,
-          "y": 14,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 6,
-          "y": 14,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 7,
-          "y": 14,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 8,
-          "y": 14,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 9,
-          "y": 14,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 10,
-          "y": 14,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 11,
-          "y": 14,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 12,
-          "y": 14,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 13,
-          "y": 14,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 14,
-          "y": 14,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 15,
-          "y": 14,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 16,
-          "y": 14,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 17,
-          "y": 14,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 18,
-          "y": 14,
+          "y": 7,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 19,
-          "y": 14,
+          "y": 7,
           "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 0,
-          "y": 15,
+          "y": 8,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 1,
-          "y": 15,
-          "type": "Grass",
+          "y": 8,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 2,
-          "y": 15,
-          "type": "Grass",
+          "y": 8,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 3,
-          "y": 15,
+          "y": 8,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 4,
-          "y": 15,
-          "type": "Lake",
+          "y": 8,
+          "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 5,
-          "y": 15,
-          "type": "Lake",
+          "y": 8,
+          "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 6,
-          "y": 15,
-          "type": "Lake",
+          "y": 8,
+          "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 7,
-          "y": 15,
-          "type": "Lake",
+          "y": 8,
+          "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 8,
-          "y": 15,
-          "type": "Lake",
+          "y": 8,
+          "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 9,
-          "y": 15,
-          "type": "Lake",
+          "y": 8,
+          "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 10,
-          "y": 15,
-          "type": "Lake",
+          "y": 8,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 11,
-          "y": 15,
-          "type": "Grass",
+          "y": 8,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 12,
-          "y": 15,
-          "type": "Grass",
+          "y": 8,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 13,
-          "y": 15,
-          "type": "Grass",
+          "y": 8,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 14,
-          "y": 15,
-          "type": "Grass",
+          "y": 8,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 15,
-          "y": 15,
+          "y": 8,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 16,
-          "y": 15,
+          "y": 8,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 17,
-          "y": 15,
+          "y": 8,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 18,
-          "y": 15,
-          "type": "Grass",
+          "y": 8,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 19,
-          "y": 15,
+          "y": 8,
           "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 0,
-          "y": 16,
-          "type": "Grass",
+          "y": 9,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 1,
-          "y": 16,
-          "type": "Grass",
+          "y": 9,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 2,
-          "y": 16,
-          "type": "Grass",
+          "y": 9,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 3,
-          "y": 16,
+          "y": 9,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 4,
-          "y": 16,
+          "y": 9,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 5,
-          "y": 16,
-          "type": "Lake",
+          "y": 9,
+          "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 6,
-          "y": 16,
-          "type": "Lake",
+          "y": 9,
+          "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 7,
-          "y": 16,
-          "type": "Lake",
+          "y": 9,
+          "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 8,
-          "y": 16,
-          "type": "Lake",
+          "y": 9,
+          "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 9,
-          "y": 16,
-          "type": "Lake",
+          "y": 9,
+          "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 10,
-          "y": 16,
-          "type": "Lake",
+          "y": 9,
+          "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 11,
-          "y": 16,
-          "type": "Lake",
+          "y": 9,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 12,
-          "y": 16,
-          "type": "Grass",
+          "y": 9,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 13,
-          "y": 16,
-          "type": "Grass",
+          "y": 9,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 14,
-          "y": 16,
+          "y": 9,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 15,
-          "y": 16,
+          "y": 9,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 16,
-          "y": 16,
+          "y": 9,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 17,
-          "y": 16,
-          "type": "Grass",
+          "y": 9,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 18,
-          "y": 16,
-          "type": "Grass",
+          "y": 9,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 19,
-          "y": 16,
-          "type": "Grass",
+          "y": 9,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 0,
-          "y": 17,
-          "type": "Grass",
+          "y": 10,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 1,
-          "y": 17,
-          "type": "Grass",
+          "y": 10,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 2,
-          "y": 17,
-          "type": "Grass",
+          "y": 10,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 3,
-          "y": 17,
+          "y": 10,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 4,
-          "y": 17,
+          "y": 10,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 5,
-          "y": 17,
+          "y": 10,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 6,
-          "y": 17,
+          "y": 10,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 7,
-          "y": 17,
-          "type": "Lake",
+          "y": 10,
+          "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 8,
-          "y": 17,
-          "type": "Lake",
+          "y": 10,
+          "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 9,
-          "y": 17,
-          "type": "Lake",
+          "y": 10,
+          "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 10,
-          "y": 17,
+          "y": 10,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 11,
-          "y": 17,
+          "y": 10,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 12,
-          "y": 17,
-          "type": "Grass",
+          "y": 10,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 13,
-          "y": 17,
-          "type": "Grass",
+          "y": 10,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 14,
-          "y": 17,
+          "y": 10,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 15,
-          "y": 17,
+          "y": 10,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 16,
-          "y": 17,
-          "type": "Lake",
+          "y": 10,
+          "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 17,
-          "y": 17,
-          "type": "Grass",
+          "y": 10,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 18,
-          "y": 17,
-          "type": "Grass",
+          "y": 10,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 19,
-          "y": 17,
-          "type": "Grass",
+          "y": 10,
+          "type": "Mountain",
           "hasTurbine": false
         },
         {
           "x": 0,
-          "y": 18,
+          "y": 11,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 1,
-          "y": 18,
+          "y": 11,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 2,
-          "y": 18,
+          "y": 11,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 3,
-          "y": 18,
+          "y": 11,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 4,
-          "y": 18,
+          "y": 11,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 5,
-          "y": 18,
+          "y": 11,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 6,
-          "y": 18,
+          "y": 11,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 7,
-          "y": 18,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 8,
-          "y": 18,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 9,
-          "y": 18,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 10,
-          "y": 18,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 11,
-          "y": 18,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 12,
-          "y": 18,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 13,
-          "y": 18,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 14,
-          "y": 18,
+          "y": 11,
           "type": "Grass",
           "hasTurbine": true
+        },
+        {
+          "x": 8,
+          "y": 11,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 9,
+          "y": 11,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 10,
+          "y": 11,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 11,
+          "y": 11,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 12,
+          "y": 11,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 13,
+          "y": 11,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 14,
+          "y": 11,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 15,
+          "y": 11,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 16,
+          "y": 11,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 17,
+          "y": 11,
+          "type": "Mountain",
+          "hasTurbine": false
+        },
+        {
+          "x": 18,
+          "y": 11,
+          "type": "Mountain",
+          "hasTurbine": false
+        },
+        {
+          "x": 19,
+          "y": 11,
+          "type": "Mountain",
+          "hasTurbine": false
+        },
+        {
+          "x": 0,
+          "y": 12,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 1,
+          "y": 12,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 2,
+          "y": 12,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 3,
+          "y": 12,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 4,
+          "y": 12,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 5,
+          "y": 12,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 6,
+          "y": 12,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 7,
+          "y": 12,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 8,
+          "y": 12,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 9,
+          "y": 12,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 10,
+          "y": 12,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 11,
+          "y": 12,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 12,
+          "y": 12,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 13,
+          "y": 12,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 14,
+          "y": 12,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 15,
+          "y": 12,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 16,
+          "y": 12,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 17,
+          "y": 12,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 18,
+          "y": 12,
+          "type": "Mountain",
+          "hasTurbine": false
+        },
+        {
+          "x": 19,
+          "y": 12,
+          "type": "Mountain",
+          "hasTurbine": false
+        },
+        {
+          "x": 0,
+          "y": 13,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 1,
+          "y": 13,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 2,
+          "y": 13,
+          "type": "Grass",
+          "hasTurbine": true
+        },
+        {
+          "x": 3,
+          "y": 13,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 4,
+          "y": 13,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 5,
+          "y": 13,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 6,
+          "y": 13,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 7,
+          "y": 13,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 8,
+          "y": 13,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 9,
+          "y": 13,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 10,
+          "y": 13,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 11,
+          "y": 13,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 12,
+          "y": 13,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 13,
+          "y": 13,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 14,
+          "y": 13,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 15,
+          "y": 13,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 16,
+          "y": 13,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 17,
+          "y": 13,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 18,
+          "y": 13,
+          "type": "Mountain",
+          "hasTurbine": false
+        },
+        {
+          "x": 19,
+          "y": 13,
+          "type": "Mountain",
+          "hasTurbine": false
+        },
+        {
+          "x": 0,
+          "y": 14,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 1,
+          "y": 14,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 2,
+          "y": 14,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 3,
+          "y": 14,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 4,
+          "y": 14,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 5,
+          "y": 14,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 6,
+          "y": 14,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 7,
+          "y": 14,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 8,
+          "y": 14,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 9,
+          "y": 14,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 10,
+          "y": 14,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 11,
+          "y": 14,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 12,
+          "y": 14,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 13,
+          "y": 14,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 14,
+          "y": 14,
+          "type": "Grass",
+          "hasTurbine": true
+        },
+        {
+          "x": 15,
+          "y": 14,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 16,
+          "y": 14,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 17,
+          "y": 14,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 18,
+          "y": 14,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 19,
+          "y": 14,
+          "type": "Mountain",
+          "hasTurbine": false
+        },
+        {
+          "x": 0,
+          "y": 15,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 1,
+          "y": 15,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 2,
+          "y": 15,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 3,
+          "y": 15,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 4,
+          "y": 15,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 5,
+          "y": 15,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 6,
+          "y": 15,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 7,
+          "y": 15,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 8,
+          "y": 15,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 9,
+          "y": 15,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 10,
+          "y": 15,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 11,
+          "y": 15,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 12,
+          "y": 15,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 13,
+          "y": 15,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 14,
+          "y": 15,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 15,
+          "y": 15,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 16,
+          "y": 15,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 17,
+          "y": 15,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 18,
+          "y": 15,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 19,
+          "y": 15,
+          "type": "Mountain",
+          "hasTurbine": false
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 1,
+          "y": 16,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 2,
+          "y": 16,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 3,
+          "y": 16,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 4,
+          "y": 16,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 5,
+          "y": 16,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 6,
+          "y": 16,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 7,
+          "y": 16,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 8,
+          "y": 16,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 9,
+          "y": 16,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 10,
+          "y": 16,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 11,
+          "y": 16,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 12,
+          "y": 16,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 13,
+          "y": 16,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 14,
+          "y": 16,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 15,
+          "y": 16,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 16,
+          "y": 16,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 17,
+          "y": 16,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 18,
+          "y": 16,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 19,
+          "y": 16,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 0,
+          "y": 17,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 1,
+          "y": 17,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 2,
+          "y": 17,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 3,
+          "y": 17,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 4,
+          "y": 17,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 5,
+          "y": 17,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 6,
+          "y": 17,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 7,
+          "y": 17,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 8,
+          "y": 17,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 9,
+          "y": 17,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 10,
+          "y": 17,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 11,
+          "y": 17,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 12,
+          "y": 17,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 13,
+          "y": 17,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 14,
+          "y": 17,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 15,
+          "y": 17,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 16,
+          "y": 17,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 17,
+          "y": 17,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 18,
+          "y": 17,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 19,
+          "y": 17,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 0,
+          "y": 18,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 1,
+          "y": 18,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 2,
+          "y": 18,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 3,
+          "y": 18,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 4,
+          "y": 18,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 5,
+          "y": 18,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 6,
+          "y": 18,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 7,
+          "y": 18,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 8,
+          "y": 18,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 9,
+          "y": 18,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 10,
+          "y": 18,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 11,
+          "y": 18,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 12,
+          "y": 18,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 13,
+          "y": 18,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 14,
+          "y": 18,
+          "type": "Grass",
+          "hasTurbine": false
         },
         {
           "x": 15,
@@ -2638,7 +2638,7 @@
           "x": 17,
           "y": 1,
           "type": "Grass",
-          "hasTurbine": false
+          "hasTurbine": true
         },
         {
           "x": 18,
@@ -2728,7 +2728,7 @@
           "x": 12,
           "y": 2,
           "type": "Grass",
-          "hasTurbine": false
+          "hasTurbine": true
         },
         {
           "x": 13,
@@ -2806,7 +2806,7 @@
           "x": 5,
           "y": 3,
           "type": "Grass",
-          "hasTurbine": true
+          "hasTurbine": false
         },
         {
           "x": 6,
@@ -2836,7 +2836,7 @@
           "x": 10,
           "y": 3,
           "type": "Grass",
-          "hasTurbine": true
+          "hasTurbine": false
         },
         {
           "x": 11,
@@ -2984,17 +2984,17 @@
         },
         {
           "x": 15,
-          "y": 4,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 16,
           "y": 4,
           "type": "Grass",
           "hasTurbine": true
         },
         {
+          "x": 16,
+          "y": 4,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
           "x": 17,
           "y": 4,
           "type": "Lake",
@@ -3268,7 +3268,7 @@
           "x": 2,
           "y": 7,
           "type": "Grass",
-          "hasTurbine": true
+          "hasTurbine": false
         },
         {
           "x": 3,
@@ -3386,53 +3386,53 @@
         },
         {
           "x": 2,
-          "y": 8,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 3,
-          "y": 8,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 4,
-          "y": 8,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 5,
-          "y": 8,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 6,
-          "y": 8,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 7,
-          "y": 8,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 8,
-          "y": 8,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 9,
           "y": 8,
           "type": "Grass",
           "hasTurbine": true
         },
         {
+          "x": 3,
+          "y": 8,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 4,
+          "y": 8,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 5,
+          "y": 8,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 6,
+          "y": 8,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 7,
+          "y": 8,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 9,
+          "y": 8,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
           "x": 10,
           "y": 8,
           "type": "Grass",
@@ -3538,7 +3538,7 @@
           "x": 7,
           "y": 9,
           "type": "Grass",
-          "hasTurbine": false
+          "hasTurbine": true
         },
         {
           "x": 8,
@@ -3699,842 +3699,842 @@
         {
           "x": 14,
           "y": 10,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 15,
+          "y": 10,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 16,
+          "y": 10,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 17,
+          "y": 10,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 18,
+          "y": 10,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 19,
+          "y": 10,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 0,
+          "y": 11,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 1,
+          "y": 11,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 2,
+          "y": 11,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 3,
+          "y": 11,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 4,
+          "y": 11,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 5,
+          "y": 11,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 6,
+          "y": 11,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 7,
+          "y": 11,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 8,
+          "y": 11,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 9,
+          "y": 11,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 10,
+          "y": 11,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 11,
+          "y": 11,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 12,
+          "y": 11,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 13,
+          "y": 11,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 14,
+          "y": 11,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 15,
+          "y": 11,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 16,
+          "y": 11,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 17,
+          "y": 11,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 18,
+          "y": 11,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 19,
+          "y": 11,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 0,
+          "y": 12,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 1,
+          "y": 12,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 2,
+          "y": 12,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 3,
+          "y": 12,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 4,
+          "y": 12,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 5,
+          "y": 12,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 6,
+          "y": 12,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 7,
+          "y": 12,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 8,
+          "y": 12,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 9,
+          "y": 12,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 10,
+          "y": 12,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 11,
+          "y": 12,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 12,
+          "y": 12,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 13,
+          "y": 12,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 14,
+          "y": 12,
           "type": "Grass",
           "hasTurbine": true
         },
         {
           "x": 15,
-          "y": 10,
+          "y": 12,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 16,
-          "y": 10,
+          "y": 12,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 17,
-          "y": 10,
+          "y": 12,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 18,
-          "y": 10,
+          "y": 12,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 19,
+          "y": 12,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 0,
+          "y": 13,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 1,
+          "y": 13,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 2,
+          "y": 13,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 3,
+          "y": 13,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 4,
+          "y": 13,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 5,
+          "y": 13,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 6,
+          "y": 13,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 7,
+          "y": 13,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 8,
+          "y": 13,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 9,
+          "y": 13,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 10,
+          "y": 13,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 11,
+          "y": 13,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 12,
+          "y": 13,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 13,
+          "y": 13,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 14,
+          "y": 13,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 15,
+          "y": 13,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 16,
+          "y": 13,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 17,
+          "y": 13,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 18,
+          "y": 13,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 19,
+          "y": 13,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 0,
+          "y": 14,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 1,
+          "y": 14,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 2,
+          "y": 14,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 3,
+          "y": 14,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 4,
+          "y": 14,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 5,
+          "y": 14,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 6,
+          "y": 14,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 7,
+          "y": 14,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 8,
+          "y": 14,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 9,
+          "y": 14,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 10,
+          "y": 14,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 11,
+          "y": 14,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 12,
+          "y": 14,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 13,
+          "y": 14,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 14,
+          "y": 14,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 15,
+          "y": 14,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 16,
+          "y": 14,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 17,
+          "y": 14,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 18,
+          "y": 14,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 19,
+          "y": 14,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 0,
+          "y": 15,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 1,
+          "y": 15,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 2,
+          "y": 15,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 3,
+          "y": 15,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 4,
+          "y": 15,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 5,
+          "y": 15,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 6,
+          "y": 15,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 7,
+          "y": 15,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 8,
+          "y": 15,
           "type": "Grass",
           "hasTurbine": true
         },
         {
+          "x": 9,
+          "y": 15,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 10,
+          "y": 15,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 11,
+          "y": 15,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 12,
+          "y": 15,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 13,
+          "y": 15,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 14,
+          "y": 15,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 15,
+          "y": 15,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 16,
+          "y": 15,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 17,
+          "y": 15,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 18,
+          "y": 15,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
           "x": 19,
-          "y": 10,
+          "y": 15,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 0,
-          "y": 11,
+          "y": 16,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 1,
-          "y": 11,
+          "y": 16,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 2,
-          "y": 11,
-          "type": "Lake",
+          "y": 16,
+          "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 3,
-          "y": 11,
-          "type": "Lake",
+          "y": 16,
+          "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 4,
-          "y": 11,
+          "y": 16,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 5,
-          "y": 11,
+          "y": 16,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 6,
-          "y": 11,
+          "y": 16,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 7,
-          "y": 11,
+          "y": 16,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 8,
-          "y": 11,
+          "y": 16,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 9,
+          "y": 16,
+          "type": "Grass",
+          "hasTurbine": false
+        },
+        {
+          "x": 10,
+          "y": 16,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 11,
+          "y": 16,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 12,
+          "y": 16,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 13,
+          "y": 16,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 14,
+          "y": 16,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 15,
+          "y": 16,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 16,
+          "y": 16,
+          "type": "Lake",
+          "hasTurbine": false
+        },
+        {
+          "x": 17,
+          "y": 16,
           "type": "Grass",
           "hasTurbine": true
         },
         {
-          "x": 9,
-          "y": 11,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 10,
-          "y": 11,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 11,
-          "y": 11,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 12,
-          "y": 11,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 13,
-          "y": 11,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 14,
-          "y": 11,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 15,
-          "y": 11,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 16,
-          "y": 11,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 17,
-          "y": 11,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
           "x": 18,
-          "y": 11,
+          "y": 16,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 19,
-          "y": 11,
+          "y": 16,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 0,
-          "y": 12,
+          "y": 17,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 1,
-          "y": 12,
+          "y": 17,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 2,
-          "y": 12,
+          "y": 17,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 3,
-          "y": 12,
-          "type": "Lake",
+          "y": 17,
+          "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 4,
-          "y": 12,
+          "y": 17,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 5,
-          "y": 12,
+          "y": 17,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 6,
-          "y": 12,
+          "y": 17,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 7,
-          "y": 12,
+          "y": 17,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 8,
-          "y": 12,
+          "y": 17,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 9,
-          "y": 12,
+          "y": 17,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 10,
-          "y": 12,
+          "y": 17,
           "type": "Grass",
           "hasTurbine": false
         },
         {
           "x": 11,
-          "y": 12,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 12,
-          "y": 12,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 13,
-          "y": 12,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 14,
-          "y": 12,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 15,
-          "y": 12,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 16,
-          "y": 12,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 17,
-          "y": 12,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 18,
-          "y": 12,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 19,
-          "y": 12,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 0,
-          "y": 13,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 1,
-          "y": 13,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 2,
-          "y": 13,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 3,
-          "y": 13,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 4,
-          "y": 13,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 5,
-          "y": 13,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 6,
-          "y": 13,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 7,
-          "y": 13,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 8,
-          "y": 13,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 9,
-          "y": 13,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 10,
-          "y": 13,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 11,
-          "y": 13,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 12,
-          "y": 13,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 13,
-          "y": 13,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 14,
-          "y": 13,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 15,
-          "y": 13,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 16,
-          "y": 13,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 17,
-          "y": 13,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 18,
-          "y": 13,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 19,
-          "y": 13,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 0,
-          "y": 14,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 1,
-          "y": 14,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 2,
-          "y": 14,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 3,
-          "y": 14,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 4,
-          "y": 14,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 5,
-          "y": 14,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 6,
-          "y": 14,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 7,
-          "y": 14,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 8,
-          "y": 14,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 9,
-          "y": 14,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 10,
-          "y": 14,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 11,
-          "y": 14,
+          "y": 17,
           "type": "Lake",
           "hasTurbine": false
         },
         {
           "x": 12,
-          "y": 14,
+          "y": 17,
           "type": "Lake",
           "hasTurbine": false
         },
         {
           "x": 13,
-          "y": 14,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 14,
-          "y": 14,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 15,
-          "y": 14,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 16,
-          "y": 14,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 17,
-          "y": 14,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 18,
-          "y": 14,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 19,
-          "y": 14,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 0,
-          "y": 15,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 1,
-          "y": 15,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 2,
-          "y": 15,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 3,
-          "y": 15,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 4,
-          "y": 15,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 5,
-          "y": 15,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 6,
-          "y": 15,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 7,
-          "y": 15,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 8,
-          "y": 15,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 9,
-          "y": 15,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 10,
-          "y": 15,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 11,
-          "y": 15,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 12,
-          "y": 15,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 13,
-          "y": 15,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 14,
-          "y": 15,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 15,
-          "y": 15,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 16,
-          "y": 15,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 17,
-          "y": 15,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 18,
-          "y": 15,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 19,
-          "y": 15,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 0,
-          "y": 16,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 1,
-          "y": 16,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 2,
-          "y": 16,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 3,
-          "y": 16,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 4,
-          "y": 16,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 5,
-          "y": 16,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 6,
-          "y": 16,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 7,
-          "y": 16,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 8,
-          "y": 16,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 9,
-          "y": 16,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 10,
-          "y": 16,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 11,
-          "y": 16,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 12,
-          "y": 16,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 13,
-          "y": 16,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 14,
-          "y": 16,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 15,
-          "y": 16,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 16,
-          "y": 16,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 17,
-          "y": 16,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 18,
-          "y": 16,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 19,
-          "y": 16,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 0,
-          "y": 17,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 1,
-          "y": 17,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 2,
-          "y": 17,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 3,
-          "y": 17,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 4,
-          "y": 17,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 5,
-          "y": 17,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 6,
           "y": 17,
           "type": "Grass",
           "hasTurbine": true
-        },
-        {
-          "x": 7,
-          "y": 17,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 8,
-          "y": 17,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 9,
-          "y": 17,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 10,
-          "y": 17,
-          "type": "Grass",
-          "hasTurbine": false
-        },
-        {
-          "x": 11,
-          "y": 17,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 12,
-          "y": 17,
-          "type": "Lake",
-          "hasTurbine": false
-        },
-        {
-          "x": 13,
-          "y": 17,
-          "type": "Grass",
-          "hasTurbine": false
         },
         {
           "x": 14,
