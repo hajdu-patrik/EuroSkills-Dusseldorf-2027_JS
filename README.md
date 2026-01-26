@@ -2,26 +2,26 @@
 ![React](https://img.shields.io/badge/Frontend-React_18-61DAFB?style=for-the-flat&logo=react&logoColor=white)
 ![Tailwind](https://img.shields.io/badge/Style-Tailwind_CSS-38B2AC?style=for-the-flat&logo=tailwind-css&logoColor=white)
 ![JSON Server](https://img.shields.io/badge/Backend-json--server_0.17.4-000000?style=for-the-flat&logo=json&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Prototype_Phase_2-orange?style=for-the-flat)
+![Status](https://img.shields.io/badge/Status-Completed_Release-green?style=for-the-flat)
 
 # GreenWind - EuroSkills 2027
 
-This repository contains the prototype solution for **GreenWind**, developed as part of the EuroSkills 2027 recruitment task. The project aims to assist wind turbine planners in optimizing energy yields through digital terrain analysis and simulation.
+This repository contains the **final solution** for **GreenWind**, developed as part of the EuroSkills 2027 recruitment task. The project is a comprehensive tool for wind turbine planners, offering digital terrain analysis, interactive placement, and real-time energy yield simulation.
 
-The current release implements **Part 1 (Data Import)** and **Part 2 (Map UI & Turbine Placement)**.
+The solution fully implements **Part 1 (Data Import)**, **Part 2 (Map UI & Turbine Placement)**, and **Part 3 (Simulation & Calculations)**.
 
 ---
 
 ## 📚 Project Architecture
 
-The solution uses a decoupled architecture separating data ingestion, persistence, and visualization.
+The solution uses a decoupled architecture separating data ingestion, persistence, logic calculation, and visualization.
 
 | Module | Type | Description | Status |
 | :--- | :--- | :--- | :--- |
 | **Import Script** | **CLI Tool** | Advanced ETL pipeline to process ASCII grid maps and binary images into structured JSON. | ✅ **Completed** |
 | **API Backend** | **REST Service** | `json-server` serving as the persistence layer for project data (`database.json`). | ✅ **Completed** |
-| **Map View** | **Frontend** | React-based SPA (Single Page Application) for visualizing terrain and interactive turbine placement. | ✅ **Completed** |
-| **Simulation** | **Service** | Physics engine to calculate power output based on wind modifiers. | 🚧 *Planned* |
+| **Map View** | **Frontend** | React-based SPA with responsive UI for terrain visualization and turbine management. | ✅ **Completed** |
+| **Simulation** | **Service** | Physics engine calculating wind attenuation, obstacle effects, and power output (MW). | ✅ **Completed** |
 
 ---
 
@@ -37,13 +37,22 @@ The solution uses a decoupled architecture separating data ingestion, persistenc
     * `node import-map.js -h` - Help menu
 
 ### 2. Interactive Map Editor (UI)
+* **Responsive Design:** Fully adaptive layout for Mobile, Tablet, and Desktop screens.
 * **Project Dashboard:** Visual gallery of imported maps with terrain composition statistics (Grass/Lake/Mountain counts).
-* **Grid Visualization:** 20x20 interactive grid overlay on the satellite map.
 * **Turbine Placement:**
     * **Drag & Click:** Place turbines on valid terrain.
     * **Validation Rules:** Turbines can only be placed on **Grass** and must respect the **Exclusion Zone** (cannot be adjacent to another turbine).
     * **Visual Feedback:** Animated icons for turbines and red warning indicators for invalid moves.
-* **Real-time Persistence:** All changes are immediately saved to the backend via API.
+* **Persistence:** All changes are saved instantly to the backend.
+
+### 3. Simulation Engine
+* **Real-time Calculation:** Instantly updates power output based on turbine configuration.
+* **Wind Physics:**
+    * **Direction Control:** Adjustable wind direction (North, South, East, West).
+    * **Speed Control:** Slider to adjust base wind speed (0-40 m/s).
+    * **Obstacle Analysis:** Calculates wind speed reduction caused by nearby Mountains or other Turbines (Wake Effect).
+* **Visual Indicators:** Dynamic arrows on the map showing local wind direction and flow.
+* **Data Output:** Displays total generated power in Megawatts (MW) and Kilowatts (kW).
 
 ---
 
