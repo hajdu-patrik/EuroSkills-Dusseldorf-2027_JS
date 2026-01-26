@@ -104,16 +104,6 @@ Open the provided local URL (e.g., `http://localhost:5173`) in your browser.
 
 ---
 
-## 📦 Tech Stack
-- **Node.js** - JavaScript runtime for backend and CLI tooling.
-- **React** - Frontend library for building the interactive UI.
-- **Tailwind CSS** - Utility-first CSS framework for styling.
-- **json-server** - Mock REST API for data persistence.
-- **Axios** - Promise-based HTTP client for API communication.
-- **Vite** - Fast frontend build tool and development server.
-
----
-
 ## 📦 Deployment
 
 This project is configured for automated deployment via **Vercel**.
