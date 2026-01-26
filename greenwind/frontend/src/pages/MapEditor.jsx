@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { api } from '../services/api';
 
-import turbineImg from '../assets/Turbine.png';
-import removeImg from '../assets/Exclusion.png';
+import turbineImg from '../assets/turbine.png';
+import removeImg from '../assets/remove.png';
 
 const MapEditor = () => {
   const { id } = useParams();
@@ -23,58 +23,65 @@ const MapEditor = () => {
     for (let [dx, dy] of directions) {
       const neighbor = cells.find(c => c.x === targetX + dx && c.y === targetY + dy);
 
-      if (neighbor && neighbor.hasTurbine)
+      if (neighbor?.hasTurbine)
         return true;
     }
     return false;
   };
 
-  const handleCellClick = async (index) => {
-    if (!project) return;
-    const updatedCells = [...project.cells];
-    const cell = updatedCells[index];
+  const canPlaceTurbine = (cell, cells) => {
+    if (cell.type !== 'Grass')
+      return false;
 
-    if (cell.type !== 'Grass') {
-      alert("Only grass terrain can have turbines! 🌱");
+    if (checkNeighbors(cell.x, cell.y, cells))
+
+      return false;
+    return true;
+  };
+
+  const handleCellClick = async (index) => {
+    if (!project)
+      return;
+    
+    const updatedCells = [...project.cells];
+    const originalCell = updatedCells[index];
+
+    if (!originalCell.hasTurbine && !canPlaceTurbine(originalCell, project.cells)) {
       return;
     }
 
-    if (cell.hasTurbine) {
-      cell.hasTurbine = false;
-    } else {
-      if (checkNeighbors(cell.x, cell.y, updatedCells)) {
-        alert("Too close to another turbine! ⚠️");
-        return;
-      }
-      cell.hasTurbine = true;
-    }
+    let newHasTurbine = !originalCell.hasTurbine;
+    updatedCells[index] = { ...originalCell, hasTurbine: newHasTurbine };
 
     const updatedProject = { ...project, cells: updatedCells };
     setProject(updatedProject);
+    
     try {
       await api.updateProject(id, updatedProject);
-    }
-    catch (error) {
-      alert("Error saving!");
+    } catch (error) {
+      console.error(error);
     }
   };
 
-  const getCellClasses = (type, hasTurbine) => {
-    let base = "relative flex items-center justify-center transition-all duration-150 ";
-    
-    if (type === 'Lake')
-      return base + "border border-white/10 hover:bg-sky-500/40 cursor-not-allowed";
+  const getCellClasses = (cell, isHovered) => {
+    let base = "relative flex items-center justify-center transition-all duration-150 border ";
+    const isValid = canPlaceTurbine(cell, project.cells);
 
-    if (type === 'Mountain')
-      return base + "border border-white/10 hover:bg-stone-900/40 cursor-not-allowed";
+    if (isHovered && !cell.hasTurbine && !isValid)
+      return base + "border-red-500/50 bg-red-500/20 cursor-not-allowed";
     
-    if (hasTurbine)
-        return base + "border-none bg-emerald-500/10 hover:bg-red-500/20 cursor-pointer";
+    if (cell.type === 'Lake')
+      return base + "border-white/10 hover:bg-sky-500/40 cursor-not-allowed";
 
-    return base + "border border-white/10 hover:bg-emerald-400/40 cursor-pointer hover:border-white/50";
+    if (cell.type === 'Mountain')
+      return base + "border-white/10 hover:bg-stone-900/40 cursor-not-allowed";
+    
+    if (cell.hasTurbine)
+      return base + "border-transparent bg-emerald-500/10 hover:bg-red-500/20 cursor-pointer";
+
+    return base + "border-white/10 hover:bg-emerald-400/40 cursor-pointer hover:border-white/50";
   };
 
-  // Statistics calculator
   const stats = project ? {
       grass: project.cells.filter(c => c.type === 'Grass').length,
       lake: project.cells.filter(c => c.type === 'Lake').length,
@@ -86,31 +93,41 @@ const MapEditor = () => {
     return <div className="text-center p-10 text-xl text-stone-500">Loading...</div>;
 
   return (
-    <div>
+    <div className="unselectable undraggable">
       <div className="flex flex-col lg:flex-row gap-10 items-start justify-center">
-        
-        {/* Left side: Map */}
         <div className="relative rounded-xl overflow-hidden shadow-2xl border-4 border-stone-700 bg-stone-800">
           <div className="w-[600px] h-[600px] relative">
             <img src={project.mapData} className="absolute inset-0 w-full h-full object-fill z-0 opacity-90" alt="Map" />
-            
-            <div className="absolute inset-0 z-10 grid grid-cols-20 grid-rows-20">
+
+            <div className="absolute inset-0 z-10 grid grid-cols-20 grid-rows-20" onDragStart={(e) => e.preventDefault()}>
               {project.cells.map((cell, index) => {
                 const isHovered = hoveredCell === index;
+                const isValid = canPlaceTurbine(cell, project.cells);
+                
+                let iconToShow = null;
+                if (cell.hasTurbine) {
+                  iconToShow = isHovered ? removeImg : turbineImg;
+                } else if (isHovered) {
+                  iconToShow = isValid ? turbineImg : removeImg;
+                }
+
                 return (
                   <div 
                     key={`${cell.x}-${cell.y}`}
-                    className={getCellClasses(cell.type, cell.hasTurbine)}
+                    className={getCellClasses(cell, isHovered)}
                     onClick={() => handleCellClick(index)}
                     onMouseEnter={() => setHoveredCell(index)}
                     onMouseLeave={() => setHoveredCell(null)}
-                    title={`X:${cell.x}, Y:${cell.y} (${cell.type})`}
+                    onDragStart={(e) => e.preventDefault()}
                   >
-                    {cell.hasTurbine && (
+                    {iconToShow && (
                       <img 
-                        src={isHovered ? removeImg : turbineImg} 
-                        alt="icon" 
-                        className={`w-4/5 h-4/5 object-contain drop-shadow-lg pointer-events-none transform-gpu will-change-transform ${!isHovered ? 'animate-spin-slow' : ''}`} 
+                        src={iconToShow} 
+                        alt="status" 
+                        onDragStart={(e) => e.preventDefault()}
+                        className={`w-4/5 h-4/5 object-contain drop-shadow-lg pointer-events-none transform-gpu
+                          ${!cell.hasTurbine && isHovered && isValid ? 'opacity-50' : 'opacity-100'}
+                        `} 
                       />
                     )}
                   </div>
@@ -145,7 +162,7 @@ const MapEditor = () => {
                         </ul>
                     </div>
 
-                    {/* Statistics Grid */}
+                    {/* Stats */}
                     <div className="grid grid-cols-3 gap-2 text-center">
                         <div className="bg-emerald-50 p-2 rounded-lg border border-emerald-100">
                             <div className="text-lg font-bold text-emerald-700">{stats.grass}</div>
@@ -157,7 +174,7 @@ const MapEditor = () => {
                         </div>
                         <div className="bg-amber-50 p-2 rounded-lg border border-amber-100">
                             <div className="text-lg font-bold text-amber-700">{stats.mountain}</div>
-                            <div className="text-xs text-amber-600">Mntn</div>
+                            <div className="text-xs text-amber-600">Mountain</div>
                         </div>
                     </div>
 

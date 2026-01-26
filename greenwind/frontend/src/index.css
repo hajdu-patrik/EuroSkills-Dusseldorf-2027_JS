@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+img, .grid, .grid > div {
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+h1, h2, h3, p, span, li {
+  user-select: text;
+  -webkit-user-drag: none;
+}
+
+
+
 body {
   @apply bg-gray-50 text-slate-800 font-sans;
 }
