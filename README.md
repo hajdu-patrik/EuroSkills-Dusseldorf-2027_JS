@@ -2,7 +2,9 @@
 ![React](https://img.shields.io/badge/Frontend-React_18-61DAFB?style=for-the-flat&logo=react&logoColor=white)
 ![Tailwind](https://img.shields.io/badge/Style-Tailwind_CSS-38B2AC?style=for-the-flat&logo=tailwind-css&logoColor=white)
 ![JSON Server](https://img.shields.io/badge/Backend-json--server_0.17.4-000000?style=for-the-flat&logo=json&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Completed_Release-green?style=for-the-flat)
+![Vercel](https://img.shields.io/badge/Deployment-Vercel-000000?style=for-the-flat&logo=vercel&logoColor=white)
+![Render](https://img.shields.io/badge/API_Host-Render-46E3B7?style=for-the-flat&logo=render&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Live_Production-success?style=for-the-flat)
 
 # GreenWind - EuroSkills 2027
 
@@ -12,16 +14,30 @@ The solution fully implements **Part 1 (Data Import)**, **Part 2 (Map UI & Turbi
 
 ---
 
-## 📚 Project Architecture
+## 🚀 Live Production
 
-The solution uses a decoupled architecture separating data ingestion, persistence, logic calculation, and visualization.
+The application is deployed to a production environment using a distributed cloud architecture.
 
-| Module | Type | Description | Status |
+👉 **Try the App:** **[https://es2027-s09-r1-174.vercel.app](https://es2027-s09-r1-174.vercel.app)**
+*(Note: The backend runs on a free instance. Please allow ~50 seconds for the initial cold start if the data doesn't load immediately.)*
+
+---
+
+## ☁️ Cloud Deployment Architecture
+
+This project utilizes a **decoupled architecture**, separating the User Interface from the Data Layer to ensure scalability and separation of concerns.
+
+| Component | Host Service | Description | URL |
 | :--- | :--- | :--- | :--- |
-| **Import Script** | **CLI Tool** | Advanced ETL pipeline to process ASCII grid maps and binary images into structured JSON. | ✅ **Completed** |
-| **API Backend** | **REST Service** | `json-server` serving as the persistence layer for project data (`database.json`). | ✅ **Completed** |
-| **Map View** | **Frontend** | React-based SPA with responsive UI for terrain visualization and turbine management. | ✅ **Completed** |
-| **Simulation** | **Service** | Physics engine calculating wind attenuation, obstacle effects, and power output (MW). | ✅ **Completed** |
+| **Frontend** | **Vercel** | Hosts the React SPA, handles static assets, and manages CI/CD for UI updates. | `*.vercel.app` |
+| **Backend** | **Render** | Hosts the Node.js environment running `json-server` to provide the REST API. | `onrender.com` |
+
+### How it works:
+1.  **Communication:** The React frontend connects to the backend via the `VITE_API_URL` environment variable.
+2.  **Persistence:** Data changes (e.g., placing a turbine) are sent from Vercel to Render, which updates the in-memory database.
+3.  **CI/CD:** Pushes to the `main` branch trigger automatic deployments:
+    * **Frontend:** Vercel rebuilds the React app and updates the edge network.
+    * **Backend:** Render pulls the latest code and restarts the API service.
 
 ---
 
@@ -43,7 +59,7 @@ The solution uses a decoupled architecture separating data ingestion, persistenc
     * **Drag & Click:** Place turbines on valid terrain.
     * **Validation Rules:** Turbines can only be placed on **Grass** and must respect the **Exclusion Zone** (cannot be adjacent to another turbine).
     * **Visual Feedback:** Animated icons for turbines and red warning indicators for invalid moves.
-* **Persistence:** All changes are saved instantly to the backend.
+* **Persistence:** All changes are saved instantly to the backend via API.
 
 ### 3. Simulation Engine
 * **Real-time Calculation:** Instantly updates power output based on turbine configuration.
@@ -56,9 +72,9 @@ The solution uses a decoupled architecture separating data ingestion, persistenc
 
 ---
 
-## ⚙️ Setup & Usage
+## ⚙️ Local Development Setup
 
-To run the full application stack, you need to execute three components in parallel terminals.
+To run the full application stack locally, you need to execute three components in parallel terminals.
 
 ### 1. Start the Backend Service
 Serves the `database.json` file as a REST API.
@@ -95,3 +111,14 @@ Open the provided local URL (e.g., `http://localhost:5173`) in your browser.
 - **json-server** - Mock REST API for data persistence.
 - **Axios** - Promise-based HTTP client for API communication.
 - **Vite** - Fast frontend build tool and development server.
+
+---
+
+## 📦 Deployment
+
+This project is configured for automated deployment via **Vercel**.
+Any push to the `main` branch automatically triggers a new build and deployment.
+
+| Environment | Status |
+| :--- | :--- |
+| **Production** | [![Vercel App](https://img.shields.io/badge/Visit-Live_App-success?style=for-the-badge&logo=vercel)](https://es2027-s09-r1-174.vercel.app) |
