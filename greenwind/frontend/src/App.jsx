@@ -18,7 +18,7 @@ const AppContent = () => {
             <img 
               src={logo} 
               alt="GreenWind Logo" 
-              className="w-10 h-10 md:w-14 md:h-14 object-contain drop-shadow-sm transition-transform group-hover:scale-105" 
+              className="w-10 h-10 md:w-14 md:h-14 object-contain drop-shadow-xs transition-transform group-hover:scale-105"
             />
             <h1 className="sr-only">
               GreenWind
@@ -27,7 +27,7 @@ const AppContent = () => {
 
           {/* Back Button on Project Pages */}
           {showBackButton && (
-            <Link to="/" className="inline-block px-4 py-2 md:px-6 md:py-3 bg-white text-stone-600 font-bold text-xs md:text-base rounded-xl border-2 border-stone-200 hover:bg-stone-100 hover:border-stone-300 hover:text-stone-800 transition-all shadow-sm">
+            <Link to="/" className="inline-block px-4 py-2 md:px-6 md:py-3 bg-white text-stone-600 font-bold text-xs md:text-base rounded-xl border-2 border-stone-200 hover:bg-stone-100 hover:border-stone-300 hover:text-stone-800 transition-all shadow-xs">
                 ← <span className="hidden sm:inline">Back to Project List</span><span className="sm:hidden">Back</span>
             </Link>
           )}

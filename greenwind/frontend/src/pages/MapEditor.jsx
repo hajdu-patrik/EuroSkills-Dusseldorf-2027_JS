@@ -238,9 +238,9 @@ const MapEditor = () => {
                     <div className="p-4 bg-stone-50 rounded-xl border border-stone-200">
                         <h3 className="font-bold text-stone-600 mb-3 text-sm uppercase">Legend</h3>
                         <ul className="space-y-2 text-sm font-medium">
-                            <li className="flex items-center gap-3"><div className="w-5 h-5 bg-emerald-400/40 border border-emerald-600 rounded shadow-sm"></div><span className="text-emerald-800">Grass (Buildable)</span></li>
-                            <li className="flex items-center gap-3"><div className="w-5 h-5 bg-sky-400/40 border border-sky-600 rounded shadow-sm"></div><span className="text-sky-800">Lake (Forbidden)</span></li>
-                            <li className="flex items-center gap-3"><div className="w-5 h-5 bg-amber-600/40 border border-amber-800 rounded shadow-sm"></div><span className="text-amber-800">Mountain (Forbidden)</span></li>
+                            <li className="flex items-center gap-3"><div className="w-5 h-5 bg-emerald-400/40 border border-emerald-600 rounded shadow-xs"></div><span className="text-emerald-800">Grass (Buildable)</span></li>
+                            <li className="flex items-center gap-3"><div className="w-5 h-5 bg-sky-400/40 border border-sky-600 rounded shadow-xs"></div><span className="text-sky-800">Lake (Forbidden)</span></li>
+                            <li className="flex items-center gap-3"><div className="w-5 h-5 bg-amber-600/40 border border-amber-800 rounded shadow-xs"></div><span className="text-amber-800">Mountain (Forbidden)</span></li>
                         </ul>
                     </div>
 

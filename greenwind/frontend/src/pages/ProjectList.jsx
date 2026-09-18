@@ -53,7 +53,7 @@ const ProjectList = () => {
                     <div className="space-y-3">
                       <div className="flex items-center justify-between text-sm">
                         <span className="flex items-center gap-2 text-emerald-700 font-bold">
-                          <div className="w-3 h-3 rounded-full bg-emerald-500 shadow-sm"></div> Grass
+                          <div className="w-3 h-3 rounded-full bg-emerald-500 shadow-xs"></div> Grass
                         </span>
                         <span className="bg-emerald-50 text-emerald-700 px-2 py-1 rounded-md border border-emerald-100 text-xs font-bold">
                           {stats.grass}
@@ -62,7 +62,7 @@ const ProjectList = () => {
 
                       <div className="flex items-center justify-between text-sm">
                         <span className="flex items-center gap-2 text-sky-700 font-bold">
-                          <div className="w-3 h-3 rounded-full bg-sky-500 shadow-sm"></div> Lake
+                          <div className="w-3 h-3 rounded-full bg-sky-500 shadow-xs"></div> Lake
                         </span>
                         <span className="bg-sky-50 text-sky-700 px-2 py-1 rounded-md border border-sky-100 text-xs font-bold">
                           {stats.lake}
@@ -71,7 +71,7 @@ const ProjectList = () => {
 
                       <div className="flex items-center justify-between text-sm">
                         <span className="flex items-center gap-2 text-amber-700 font-bold">
-                          <div className="w-3 h-3 rounded-full bg-amber-500 shadow-sm"></div> Mountain
+                          <div className="w-3 h-3 rounded-full bg-amber-500 shadow-xs"></div> Mountain
                         </span>
                         <span className="bg-amber-50 text-amber-700 px-2 py-1 rounded-md border border-amber-100 text-xs font-bold">
                           {stats.mountain}
