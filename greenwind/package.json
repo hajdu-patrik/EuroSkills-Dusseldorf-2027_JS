@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "GreenWind",
   "main": "import-map.js",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
     "server": "json-server --watch database.json --port 3000",
     "import": "node import-map.js ./assets/Mariager"
