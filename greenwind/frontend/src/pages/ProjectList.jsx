@@ -11,6 +11,11 @@ const ProjectList = () => {
        .catch(err => console.error("Server error:", err));
   }, []);
 
+  // Document title for this route, built from text this page itself renders
+  useEffect(() => {
+    document.title = 'GreenWind - Available Projects';
+  }, []);
+
   // Function to calculate terrain statistics
   const getStats = (cells) => {
     return {
@@ -33,12 +38,14 @@ const ProjectList = () => {
           
           return (
             <Link key={p.id} to={`/project/${p.id}`} className="group block h-full">
-              <div className="bg-white border border-stone-200 rounded-2xl shadow-md hover:shadow-xl hover:border-emerald-500 transition-all duration-300 overflow-hidden flex flex-col h-full transform hover:-translate-y-1">
-                
+              <div className="bg-white border border-stone-200 rounded-2xl shadow-md hover:shadow-xl hover:border-emerald-500 transition duration-300 overflow-hidden flex flex-col h-full transform hover:-translate-y-1">
+
                 <div className="h-48 md:h-56 overflow-hidden bg-stone-200 relative">
-                  <img 
-                    src={p.mapData} 
-                    alt={p.name} 
+                  <img
+                    src={p.mapData}
+                    alt={p.name}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 select-none"
                   />
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">

@@ -1,12 +1,38 @@
-import { useEffect, useState, useMemo } from 'react';
+import { useEffect, useState, useMemo, useCallback, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import { api } from '../services/api';
 import NotFound from './NotFound';
+import MapCell from '../components/MapCell';
+import Button from '../components/ui/Button';
 
-import { calculateWindSpeed, calculatePower, WIND_DIRECTIONS } from '../utils/utils';
+import { calculateWindSpeed, calculatePower, indexCellsByCoord, WIND_DIRECTIONS } from '../utils/utils';
 
 import turbineImg from '../assets/turbine.png';
 import removeImg from '../assets/remove.png';
+
+// Turbine-placement validation. Takes the same coordinate index calculateWindSpeed already builds
+// (see utils.js) instead of re-scanning the cells array, so checking all 400 cells costs O(400 x 8)
+// map lookups instead of O(400 x 8 x 400) linear scans.
+const checkNeighbors = (targetX, targetY, cellIndex) => {
+  const directions = [[-1, -1], [0, -1], [1, -1], [-1, 0], [1, 0], [-1, 1], [0, 1], [1, 1]];
+  for (let [dx, dy] of directions) {
+    const neighbor = cellIndex.get((targetX + dx) + ',' + (targetY + dy));
+    if (neighbor?.hasTurbine) return true;
+  }
+  return false;
+};
+
+const canPlaceTurbine = (cell, cellIndex) => {
+  if (cell.type !== 'Grass') return false;
+  if (checkNeighbors(cell.x, cell.y, cellIndex)) return false;
+  return true;
+};
+
+// Helper to get arrow rotation based on wind direction
+const getArrowRotation = (dir) => {
+  const rotationMap = { 'East': 180, 'West': 0, 'North': 90, 'South': -90 };
+  return rotationMap[dir] || 0;
+};
 
 const MapEditor = () => {
   const { id } = useParams();
@@ -16,6 +42,11 @@ const MapEditor = () => {
   const [hoveredCell, setHoveredCell] = useState(null);
   const [windDirection, setWindDirection] = useState('North');
   const [baseWindSpeed, setBaseWindSpeed] = useState(10);
+  // Instant UI readout for the slider; baseWindSpeed (above) drives the heavy recompute and is only
+  // updated at most once per animation frame - see handleWindSpeedChange.
+  const [displaySpeed, setDisplaySpeed] = useState(10);
+  const pendingSpeedRef = useRef(10);
+  const speedRafRef = useRef(null);
 
   // Fetch project data
   useEffect(() => {
@@ -28,6 +59,26 @@ const MapEditor = () => {
       setLoading(false);
     });
   }, [id]);
+
+  // Document title for this route, built from text this page itself renders (the project name)
+  useEffect(() => {
+    if (project) document.title = `GreenWind - ${project.name}`;
+  }, [project]);
+
+  // Cancel any pending throttled slider update on unmount
+  useEffect(() => () => {
+    if (speedRafRef.current != null) cancelAnimationFrame(speedRafRef.current);
+  }, []);
+
+  // Coordinate -> cell index for O(1) neighbor lookups, rebuilt only when the project data changes
+  const cellIndex = useMemo(() => (project ? indexCellsByCoord(project.cells) : null), [project]);
+
+  // Turbine-placement validity per cell, recomputed only when the layout actually changes (not on
+  // hover, wind direction or wind speed changes)
+  const validityMap = useMemo(() => {
+    if (!project || !cellIndex) return [];
+    return project.cells.map(cell => canPlaceTurbine(cell, cellIndex));
+  }, [project, cellIndex]);
 
   // Simulation Data Calculation
   const simulationData = useMemo(() => {
@@ -81,31 +132,15 @@ const MapEditor = () => {
     }
   };
 
-  // Check neighboring cells for turbine presence
-  const checkNeighbors = (targetX, targetY, cells) => {
-    const directions = [[-1, -1], [0, -1], [1, -1], [-1, 0], [1, 0], [-1, 1], [0, 1], [1, 1]];
-    for (let [dx, dy] of directions) {
-      const neighbor = cells.find(c => c.x === targetX + dx && c.y === targetY + dy);
-      if (neighbor?.hasTurbine) return true;
-    }
-    return false;
-  };
-
-  // Validate if a turbine can be placed
-  const canPlaceTurbine = (cell, cells) => {
-    if (cell.type !== 'Grass') return false;
-    if (checkNeighbors(cell.x, cell.y, cells)) return false;
-    return true;
-  };
-
-  // Handle cell click to toggle turbine
-  const handleCellClick = async (index) => {
+  // Handle cell click to toggle turbine - stable reference (useCallback) so MapCell's memoisation
+  // isn't defeated by a freshly-created handler on every render
+  const handleCellClick = useCallback(async (index) => {
     if (!project) return;
 
     const updatedCells = [...project.cells];
     const originalCell = updatedCells[index];
 
-    if (!originalCell.hasTurbine && !canPlaceTurbine(originalCell, project.cells)) return;
+    if (!originalCell.hasTurbine && !canPlaceTurbine(originalCell, cellIndex)) return;
 
     let newHasTurbine = !originalCell.hasTurbine;
     updatedCells[index] = { ...originalCell, hasTurbine: newHasTurbine };
@@ -117,52 +152,26 @@ const MapEditor = () => {
     } catch (error) {
       console.error(error);
     }
-  };
+  }, [project, cellIndex, id]);
 
-  // Helper to get turbine color class based on power
-  const getTurbineColorClass = (power, min, max) => {
-    if (min === max) return "bg-emerald-500/60";
+  // Hover handlers - stable references, no dependencies, so a hover change only ever affects the
+  // isHovered prop of the two cells involved instead of recreating a callback for all 400
+  const handleCellHover = useCallback((index) => setHoveredCell(index), []);
+  const handleCellLeave = useCallback(() => setHoveredCell(null), []);
 
-    const ratio = (power - min) / (max - min || 1);
-
-    if (ratio < 0.33) return "bg-red-500/60";
-    if (ratio < 0.66) return "bg-orange-400/60";
-
-    return "bg-emerald-500/60";
-  };
-
-  // Helper to get cell classes
-  const getCellClasses = (cell, isHovered, simCell) => {
-    let base = "relative flex items-center justify-center transition-all duration-150 border ";
-    const isValid = canPlaceTurbine(cell, project.cells);
-    const { minPower, maxPower } = simulationData;
-
-    let bgClass = "";
-    if (cell.hasTurbine) {
-      bgClass = getTurbineColorClass(simCell.power, minPower, maxPower);
-    } else if (cell.type === 'Lake') {
-      bgClass = "hover:bg-sky-500/40";
-    } else if (cell.type === 'Mountain') {
-      bgClass = "hover:bg-stone-900/40";
-    } else {
-      bgClass = "bg-emerald-500/5 hover:bg-emerald-400/40";
+  // Wind speed slider: update the displayed value instantly, but defer the O(400) simulation
+  // recompute to at most once per animation frame so a fast drag can't queue up redundant work
+  const handleWindSpeedChange = useCallback((e) => {
+    const value = Number(e.target.value);
+    setDisplaySpeed(value);
+    pendingSpeedRef.current = value;
+    if (speedRafRef.current == null) {
+      speedRafRef.current = requestAnimationFrame(() => {
+        speedRafRef.current = null;
+        setBaseWindSpeed(pendingSpeedRef.current);
+      });
     }
-
-    if (isHovered && !cell.hasTurbine && !isValid) return `${base} border-red-500/50 bg-red-500/20 cursor-not-allowed`;
-    if (cell.type === 'Lake' || cell.type === 'Mountain') return `${base} border-white/10 cursor-not-allowed ${bgClass}`;
-    
-    const hoverBorder = cell.hasTurbine 
-        ? "border-transparent hover:bg-red-500/20" 
-        : "border-white/10 hover:border-white/50";
-
-    return `${base} cursor-pointer ${hoverBorder} ${bgClass}`;
-  };
-
-  // Helper to get arrow rotation based on wind direction
-  const getArrowRotation = (dir) => {
-    const rotationMap = { 'East': 180, 'West': 0, 'North': 90, 'South': -90 };
-    return rotationMap[dir] || 0;
-  };
+  }, []);
 
   // Project Cell Type Stats
   const stats = project ? {
@@ -179,6 +188,8 @@ const MapEditor = () => {
   if (loading)
     return <div className="text-center p-10 text-xl text-stone-500">Loading...</div>;
 
+  const arrowRotation = getArrowRotation(windDirection);
+
   // Main Render
   return (
     <div className="flex flex-col items-center gap-6 p-4 pb-20 w-full max-w-[1600px] mx-auto">
@@ -187,51 +198,36 @@ const MapEditor = () => {
         {/* Left side: Map Panel */}
         <div className="relative rounded-xl w-full xl:flex-1">
           <div className="relative rounded-xl overflow-hidden shadow-2xl border-4 border-stone-700 bg-stone-800 w-full xl:flex-1 aspect-square">
-            <img 
-              src={project.mapData} 
-              className="absolute inset-0 w-full h-full object-fill z-0 opacity-90 select-none pointer-events-none" 
-              alt="Map" 
-              onDragStart={(e) => e.preventDefault()} 
+            <img
+              src={project.mapData}
+              className="absolute inset-0 w-full h-full object-fill z-0 opacity-90 select-none pointer-events-none"
+              alt="Map"
+              fetchpriority="high"
+              decoding="async"
+              onDragStart={(e) => e.preventDefault()}
             />
 
             <div className="absolute inset-0 z-10 grid grid-cols-20 grid-rows-20">
               {simulationData.cells.map((simCell, index) => {
                 const cell = project.cells[index];
-                const isHovered = hoveredCell === index;
-                const isValid = canPlaceTurbine(cell, project.cells);
-                
-                let iconToShow = null;
-                if (cell.hasTurbine) iconToShow = isHovered ? removeImg : turbineImg;
-                else if (isHovered) iconToShow = isValid ? turbineImg : removeImg;
-
-                const tooltipText = simCell.hasTurbine 
-                  ? `Power: ${Math.round(simCell.power)} kW\nWind: ${simCell.speed.toFixed(1)} m/s\nModifiers: ${(simCell.modifier * 100).toFixed(0)}%\n${simCell.reasons.join('\n')}`
-                  : `Wind: ${simCell.speed.toFixed(1)} m/s`;
 
                 return (
-                  <div 
+                  <MapCell
                     key={`${cell.x}-${cell.y}`}
-                    className={getCellClasses(cell, isHovered, simCell)}
-                    onClick={() => handleCellClick(index)}
-                    onMouseEnter={() => setHoveredCell(index)}
-                    onMouseLeave={() => setHoveredCell(null)}
-                    onDragStart={(e) => e.preventDefault()}
-                    title={tooltipText}
-                    role="button"
-                    tabIndex={0}
-                    onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleCellClick(index); }}
-                  >
-                    {cell.type !== 'Mountain' && (
-                        <div className="absolute inset-0 flex items-center justify-center opacity-30 pointer-events-none text-[10px] text-stone-900 font-bold select-none">
-                        <span className="select-none" style={{ transform: `rotate(${getArrowRotation(windDirection)}deg)` }}>➤</span>
-                        </div>
-                    )}
-                    {iconToShow && (
-                      <img src={iconToShow} alt="status" onDragStart={(e) => e.preventDefault()}
-                        className={`w-4/5 h-4/5 object-contain drop-shadow-lg pointer-events-none transform-gpu relative z-10 select-none ${!cell.hasTurbine && isHovered && isValid ? 'opacity-50' : 'opacity-100'}`} 
-                      />
-                    )}
-                  </div>
+                    cell={cell}
+                    simCell={simCell}
+                    isHovered={hoveredCell === index}
+                    isValid={validityMap[index]}
+                    arrowRotation={arrowRotation}
+                    minPower={simulationData.minPower}
+                    maxPower={simulationData.maxPower}
+                    index={index}
+                    turbineImg={turbineImg}
+                    removeImg={removeImg}
+                    onCellClick={handleCellClick}
+                    onCellHover={handleCellHover}
+                    onCellLeave={handleCellLeave}
+                  />
                 );
               })}
             </div>
@@ -266,11 +262,11 @@ const MapEditor = () => {
                           <span className="font-semibold text-sm opacity-90">Installed Turbines</span>
                           <span className="text-3xl font-extrabold">{stats.turbines} <span className="text-lg font-normal opacity-80">pcs</span></span>
                       </div>
-                      <button 
+                      <Button
                           onClick={handleClearAllTurbines}
                           disabled={stats.turbines === 0}
                           title={stats.turbines === 0 ? "No turbines to remove" : "Remove All Turbines"}
-                          className={`flex-[0.3] rounded-xl flex items-center justify-center transition-colors duration-200 border ${stats.turbines === 0 ? "bg-stone-300 text-stone-500 cursor-not-allowed border-stone-300 shadow-none" : "bg-red-500 hover:bg-red-600 text-white border-red-400/20 shadow-red-200"}`}
+                          variant={stats.turbines === 0 ? 'dangerDisabled' : 'dangerEnabled'}
                       >
                           <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="select-none pointer-events-none" onDragStart={(e) => e.preventDefault()}>
                               <polyline points="3 6 5 6 21 6"></polyline>
@@ -278,7 +274,7 @@ const MapEditor = () => {
                               <line x1="10" y1="11" x2="10" y2="17"></line>
                               <line x1="14" y1="11" x2="14" y2="17"></line>
                           </svg>
-                      </button>
+                      </Button>
                   </div>
                 </div>
             </div>
@@ -288,15 +284,15 @@ const MapEditor = () => {
       {/* Bottom Section: Simulation Panel */}
       <div className="w-full bg-white p-8 rounded-2xl shadow-2xl border border-stone-200">
          <div className="flex flex-col lg:flex-row gap-8 items-center justify-between">
-            
+
             {/* Wind Direction */}
             <div className="w-full flex-1">
                 <h3 className="text-sm font-bold text-stone-400 uppercase tracking-wider mb-3">Wind Direction</h3>
                 <div className="grid grid-cols-4 gap-2">
                     {Object.keys(WIND_DIRECTIONS).map(dir => (
-                        <button key={dir} onClick={() => setWindDirection(dir)} className={`py-3 px-2 rounded-xl text-sm font-bold border-2 transition-all ${windDirection === dir ? 'bg-stone-800 text-white border-stone-800 shadow-lg scale-105' : 'bg-white text-stone-600 border-stone-200 hover:border-stone-400 hover:bg-stone-50'}`}>
+                        <Button key={dir} onClick={() => setWindDirection(dir)} variant={windDirection === dir ? 'navActive' : 'navInactive'}>
                             <span className="text-lg mr-1 select-none pointer-events-none">{WIND_DIRECTIONS[dir].arrow}</span><br/>{dir}
-                        </button>
+                        </Button>
                     ))}
                 </div>
             </div>
@@ -305,9 +301,9 @@ const MapEditor = () => {
             <div className="w-full flex-1 px-4">
                 <div className="flex justify-between items-end mb-4">
                     <h3 className="text-sm font-bold text-stone-400 uppercase tracking-wider">Wind Speed</h3>
-                    <span className="text-2xl font-mono font-bold text-stone-800">{baseWindSpeed} <span className="text-sm text-stone-400 font-sans">m/s</span></span>
+                    <span className="text-2xl font-mono font-bold text-stone-800">{displaySpeed} <span className="text-sm text-stone-400 font-sans">m/s</span></span>
                 </div>
-                <input type="range" min="0" max="40" step="1" value={baseWindSpeed} onChange={(e) => setBaseWindSpeed(Number(e.target.value))} className="w-full h-3 bg-stone-200 rounded-lg appearance-none cursor-pointer accent-emerald-600"/>
+                <input type="range" min="0" max="40" step="1" value={displaySpeed} onChange={handleWindSpeedChange} className="w-full h-3 bg-stone-200 rounded-lg appearance-none cursor-pointer accent-emerald-600"/>
                 <div className="flex justify-between text-xs text-stone-400 mt-2 font-medium"><span>Calm (0 m/s)</span><span>Storm (40 m/s)</span></div>
             </div>
 

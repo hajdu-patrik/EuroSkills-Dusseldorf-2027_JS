@@ -2,7 +2,8 @@ import { BrowserRouter, Routes, Route, useLocation, Link } from 'react-router-do
 import ProjectList from './pages/ProjectList';
 import MapEditor from './pages/MapEditor';
 import NotFound from './pages/NotFound';
-import logo from './assets/favicon.ico';
+import Button from './components/ui/Button';
+import logo from './assets/logo.png';
 
 const AppContent = () => {
   const location = useLocation();
@@ -15,9 +16,13 @@ const AppContent = () => {
           
           {/* Logo and Home Link */}
           <Link to="/" className="flex items-center gap-3 group hover:opacity-80 transition-opacity">
-            <img 
-              src={logo} 
-              alt="GreenWind Logo" 
+            <img
+              src={logo}
+              alt="GreenWind Logo"
+              width="128"
+              height="128"
+              fetchpriority="high"
+              decoding="async"
               className="w-10 h-10 md:w-14 md:h-14 object-contain drop-shadow-xs transition-transform group-hover:scale-105"
             />
             <h1 className="sr-only">
@@ -27,9 +32,9 @@ const AppContent = () => {
 
           {/* Back Button on Project Pages */}
           {showBackButton && (
-            <Link to="/" className="inline-block px-4 py-2 md:px-6 md:py-3 bg-white text-stone-600 font-bold text-xs md:text-base rounded-xl border-2 border-stone-200 hover:bg-stone-100 hover:border-stone-300 hover:text-stone-800 transition-all shadow-xs">
+            <Button as={Link} to="/" variant="ghost">
                 ← <span className="hidden sm:inline">Back to Project List</span><span className="sm:hidden">Back</span>
-            </Link>
+            </Button>
           )}
         </nav>
         

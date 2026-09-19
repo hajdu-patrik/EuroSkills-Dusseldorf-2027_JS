@@ -5,6 +5,11 @@ const NotFound = () => {
   const navigate = useNavigate();
   const [timeLeft, setTimeLeft] = useState(3);
 
+  // Document title for this route, built from text this page itself renders
+  useEffect(() => {
+    document.title = 'GreenWind - Page Not Found';
+  }, []);
+
   // Countdown and redirect effect
   useEffect(() => {
     const timer = setInterval(() => {

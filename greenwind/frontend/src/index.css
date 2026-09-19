@@ -19,3 +19,14 @@ img, .grid, .grid > div, h1, h2, h3, p, span, li {
 body {
   @apply bg-gray-50 text-slate-800 font-sans;
 }
+
+/* Respect the user's OS-level motion preference: shrinks every animation/transition to be
+   effectively instant. No effect at all for users without this preference set. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

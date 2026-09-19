@@ -6,12 +6,32 @@ export const WIND_DIRECTIONS = {
   West:  { dx: -1, dy: 0, label: 'West (W)', arrow: '→' }   // Left to right wind
 };
 
+// Coordinate -> cell lookup, indexed once per distinct `cells` array reference instead of doing a
+// linear scan on every lookup. calculateWindSpeed calls this up to 10x per cell (400 cells x 10 = up
+// to 4000 lookups per full recompute), so an O(n) `.find()` here made a full recompute effectively
+// O(400 x 10 x 400) instead of the intended O(400 x 5). WeakMap keys on the array object itself, so
+// the cached index is naturally dropped once that cells array is replaced (no manual invalidation).
+const cellIndexCache = new WeakMap();
+const getCellIndex = (cells) => {
+  let index = cellIndexCache.get(cells);
+  if (!index) {
+    index = new Map();
+    for (const c of cells) index.set(c.x + ',' + c.y, c);
+    cellIndexCache.set(cells, index);
+  }
+  return index;
+};
+
+// Exported so callers with their own neighbor-lookup logic (e.g. MapEditor's turbine-placement
+// validity check) can reuse the same cached index instead of scanning the cells array themselves.
+export const indexCellsByCoord = getCellIndex;
+
 // Helper function to get a cell by coordinates
 const getCellAt = (cells, x, y) => {
   if (x < 0 || x >= 20 || y < 0 || y >= 20) {
-    return { type: 'Grass', hasTurbine: false }; 
+    return { type: 'Grass', hasTurbine: false };
   }
-  return cells.find(c => c.x === x && c.y === y);
+  return getCellIndex(cells).get(x + ',' + y);
 };
 
 // Wind speed calculation for each cell
