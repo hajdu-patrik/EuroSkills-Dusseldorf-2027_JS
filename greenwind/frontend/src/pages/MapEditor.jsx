@@ -1,6 +1,7 @@
 import { useEffect, useState, useMemo } from 'react';
 import { useParams } from 'react-router-dom';
 import { api } from '../services/api';
+import NotFound from './NotFound';
 
 import { calculateWindSpeed, calculatePower, WIND_DIRECTIONS } from '../utils/utils';
 
@@ -11,6 +12,7 @@ const MapEditor = () => {
   const { id } = useParams();
   const [project, setProject] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [notFound, setNotFound] = useState(false);
   const [hoveredCell, setHoveredCell] = useState(null);
   const [windDirection, setWindDirection] = useState('North');
   const [baseWindSpeed, setBaseWindSpeed] = useState(10);
@@ -19,6 +21,10 @@ const MapEditor = () => {
   useEffect(() => {
     api.getProject(id).then(res => {
       setProject(res.data);
+      setLoading(false);
+    }).catch(() => {
+      // Unknown project id (or unreachable API): show the 404 page instead of loading forever
+      setNotFound(true);
       setLoading(false);
     });
   }, [id]);
@@ -167,6 +173,9 @@ const MapEditor = () => {
   } : {};
 
   // Loading State
+  if (notFound)
+    return <NotFound />;
+
   if (loading)
     return <div className="text-center p-10 text-xl text-stone-500">Loading...</div>;
 
