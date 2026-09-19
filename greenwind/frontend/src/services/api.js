@@ -14,13 +14,22 @@ const apiClient = axios.create({
     },
 });
 
+// Attach the authentication token (if present) to every outgoing request
+apiClient.interceptors.request.use((config) => {
+    const token = localStorage.getItem('token');
+    if (token) {
+        config.headers.Authorization = `Bearer ${token}`;
+    }
+    return config;
+});
+
 export const api = {
   // Requesting all projects
-  getProjects: () => axios.get(`${BASE_URL}/projects`),
+  getProjects: () => apiClient.get('/projects'),
   
   // Requesting a specific project by ID
-  getProject: (id) => axios.get(`${BASE_URL}/projects/${id}`),
+  getProject: (id) => apiClient.get(`/projects/${id}`),
   
   // Updating a project
-  updateProject: (id, data) => axios.put(`${BASE_URL}/projects/${id}`, data)
+  updateProject: (id, data) => apiClient.put(`/projects/${id}`, data)
 };
