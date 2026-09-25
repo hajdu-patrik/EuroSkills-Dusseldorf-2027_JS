@@ -1,12 +1,13 @@
-![Node.js](https://img.shields.io/badge/Node.js-18.x%2B-339933?style=for-the-flat&logo=node.js&logoColor=white)
-![React](https://img.shields.io/badge/Frontend-React_18-61DAFB?style=for-the-flat&logo=react&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Style-Tailwind_CSS-38B2AC?style=for-the-flat&logo=tailwind-css&logoColor=white)
-![JSON Server](https://img.shields.io/badge/Backend-json--server_0.17.4-000000?style=for-the-flat&logo=json&logoColor=white)
-![Vercel](https://img.shields.io/badge/Deployment-Vercel-000000?style=for-the-flat&logo=vercel&logoColor=white)
-![Render](https://img.shields.io/badge/API_Host-Render-46E3B7?style=for-the-flat&logo=render&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Live_Production-success?style=for-the-flat)
-
 # GreenWind - EuroSkills 2027
+
+![Node.js](https://img.shields.io/badge/Node.js-18.x%2B-339933?style=flat&logo=node.js&logoColor=white)
+![React](https://img.shields.io/badge/Frontend-React_18-61DAFB?style=flat&logo=react&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Style-Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
+![JSON Server](https://img.shields.io/badge/Backend-json--server_0.17.4-000000?style=flat&logo=json&logoColor=white)
+![Vercel](https://img.shields.io/badge/Deployment-Vercel-000000?style=flat&logo=vercel&logoColor=white)
+![Render](https://img.shields.io/badge/API_Host-Render-46E3B7?style=flat&logo=render&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Live_Production-success?style=flat)
+![License](https://img.shields.io/badge/License-All_Rights_Reserved-red?style=flat)
 
 This repository contains the **final solution** for **GreenWind**, developed as part of the EuroSkills 2027 recruitment task. The project is a comprehensive tool for wind turbine planners, offering digital terrain analysis, interactive placement, and real-time energy yield simulation.
 
@@ -23,7 +24,7 @@ The application is deployed to a production environment using a distributed clou
 
 ---
 
-## ☁️ Cloud Deployment Architecture
+## 🏗️ Cloud Deployment Architecture
 
 This project utilizes a **decoupled architecture**, separating the User Interface from the Data Layer to ensure scalability and separation of concerns.
 
@@ -41,7 +42,7 @@ This project utilizes a **decoupled architecture**, separating the User Interfac
 
 ---
 
-## 🛠️ Features
+## ✨ Features
 
 ### 1. CLI Import Tool
 * **Validation:** Checks for file existence and grid integrity (20x20).
@@ -112,3 +113,11 @@ Any push to the `main` branch automatically triggers a new build and deployment.
 | Environment | Status |
 | :--- | :--- |
 | **Production** | [![Vercel App](https://img.shields.io/badge/Visit-Live_App-success?style=for-the-badge&logo=vercel)](https://es2027-s09-r1-174.vercel.app) |
+
+---
+
+## 📄 License
+
+Copyright (c) Hajdú Patrik Zsolt. All rights reserved.
+
+Published for demonstration and portfolio purposes only. Using any part of this code as a solution for an academic assignment is strictly prohibited. See [LICENSE.md](LICENSE.md) for the full terms.
