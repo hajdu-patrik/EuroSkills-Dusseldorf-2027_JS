@@ -3,7 +3,10 @@ const path = require('node:path');
 const { v4: uuidv4 } = require('uuid');
 const axios = require('axios');
 
-const API_URL = 'http://localhost:3000/projects';
+const API_URL = process.env.API_URL || 'http://localhost:3000/projects';
+// Write operations need the server's admin token (read from the environment, never hard-coded)
+const ADMIN_TOKEN = process.env.ADMIN_TOKEN || '';
+const authHeaders = ADMIN_TOKEN ? { Authorization: `Bearer ${ADMIN_TOKEN}` } : {};
 const GRID_SIZE = 20;
 const EXPECTED_CELL_COUNT = GRID_SIZE * GRID_SIZE; // 400
 
@@ -86,7 +89,9 @@ async function runImportPipeline(folderPath) {
         };
 
         // 4. Saving
-        const res = await axios.post(API_URL, projectData);
+        if (!ADMIN_TOKEN)
+            exitWithError('ADMIN_TOKEN is not set. Importing requires the server\'s admin token.');
+        const res = await axios.post(API_URL, projectData, { headers: authHeaders });
         if (res.status === 201) {
             console.log(`${colors.green}[SUCCESS]${colors.reset} Project successfully imported with ${projectData.id} ID!`);
         }
@@ -143,7 +148,9 @@ ${colors.green}-h${colors.reset}         |  This help message
 function handleAxiosError(error) {
     console.error(`${colors.red}[NETWORK ERROR]${colors.reset}`);
     if (error.code === 'ECONNREFUSED') {
-        console.error("Failed to connect to the server. Is the json-server running on port 3000?");
+        console.error("Failed to connect to the server. Is the API server running on port 3000?");
+    } else if ([401, 403].includes(error.response?.status)) {
+        console.error('The server rejected the admin token. Check that ADMIN_TOKEN matches the server.');
     } else {
         console.error(error.message);
     }
