@@ -32,7 +32,7 @@ This project utilizes a **decoupled architecture**, separating the User Interfac
 | Component | Host Service | Description | URL |
 | :--- | :--- | :--- | :--- |
 | **Frontend** | **Vercel** | Hosts the React SPA, handles static assets, and manages CI/CD for UI updates. | `*.vercel.app` |
-| **Backend** | **Render** | Hosts the Node.js environment running `json-server` to provide the REST API. | `onrender.com` |
+| **Backend** | **Render** | Hosts the Node.js environment running `server.js` (`json-server` with server-side authorization) to provide the REST API. Start command: `npm start`, with `ADMIN_TOKEN` set in the Render environment. | `onrender.com` |
 
 ### How it works:
 1.  **Communication:** The React frontend connects to the backend via the `VITE_API_URL` environment variable.
@@ -79,19 +79,26 @@ This project utilizes a **decoupled architecture**, separating the User Interfac
 To run the full application stack locally, you need to execute three components in parallel terminals. All commands below are run from the `greenwind/` folder.
 
 ### 1. Start the Backend Service
-Serves the `database.json` file as a REST API.
+Serves the `database.json` file as a REST API (`server.js`, built on `json-server`). Set `ADMIN_TOKEN` to a long random secret to enable admin operations.
 
 ```bash
-npx json-server --watch database.json --port 3000
+ADMIN_TOKEN=<secret> npm run server
 ```
 
-Wait until: Resources `http://localhost:3000/projects`
+Wait until: `GreenWind API running on port 3000`
+
+**Access rules (enforced by the server):**
+* Reading (`GET`) is public.
+* `PUT /projects/:id` is public, but only turbine placement can change. The server keeps every other field as stored and re-checks the placement rules (Grass only, no adjacent turbines).
+* Everything else (`POST`, `PATCH`, `DELETE`, other writes) needs `Authorization: Bearer <ADMIN_TOKEN>`. If `ADMIN_TOKEN` is not set, these requests are refused.
+
+The admin token is a server-side secret. Never put it in a `VITE_` variable: those are bundled into the public frontend.
 
 ### 2. Import or Add Data
-If the database is empty (`database.json`), import the sample data.
+If the database is empty (`database.json`), import the sample data. The import tool needs the same `ADMIN_TOKEN` (and optionally `API_URL`, default `http://localhost:3000/projects`).
 
 ```bash
-node import-map.js -f <path> (e.g., ./assets/Mariager)
+ADMIN_TOKEN=<secret> node import-map.js -f <path> (e.g., ./assets/Mariager)
 ```
 
 ### 3. Launch the Frontend
